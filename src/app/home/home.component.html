@@ -1,0 +1,98 @@
+<app-header></app-header>
+
+<section class="intro justify-between align-center card-1">
+    <div class="right ">
+        <div class="title EBold">CODE OPEN SOURCE</div>
+        <div class="description c5">Browse and download tones of projects for free, or post yours by joining our community.   </div>
+        <a class="btn bold" >JOIN NOW</a>
+    </div>
+    <div class=" left cover">
+        <div class="wrapper flex column align-end justify-between">
+            <div class="title EBold">SUPPORT THE WEBSITE</div>
+            <div class="description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque </div>
+            <a class="btn white bold" >DONATE</a>
+        </div>
+    </div>
+</section> 
+
+<section class="flex wrap align-center justify-between">
+        <section class="categories card-1 " id="cat-container">
+                <div class="arrow-left btn category card-1 "><code><<</code></div>
+                <div class="container" >
+                        <div class="btn category card-1 transition" *ngFor="let tag of tags">{{tag}}</div>
+                </div>
+                <div class="arrow-right btn category card-1 " (click)="slideCat('left')" > >> </div>        
+            </section>
+        
+            <section class="social flex align-center">
+                <div class="btn facebook bold card-1">
+                    <i class="icon-facebook-squared"></i>
+                    FACEBOOK
+                </div>
+                <div class="btn twitter bold card-1">
+                    <i class="icon-twitter"></i>  
+                    TWITTER
+                </div>
+            </section>
+</section>
+
+<section class="item-list flex wrap justify-between align-center">
+
+    
+    <div class="item card-1" *ngFor="let item of items">
+        
+        <div class="cover-image cover" [ngStyle]="{ 'background-image': 'url(' + item + ')'}"></div>
+
+        <div class="top flex align-center">
+            <div class="img cover"></div>
+            <div>
+                <div class="name c5">Library management system</div>
+                <div class="tags light bold">JAVA, PHP, JS</div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="dev bold">Developer name</div>
+            <div class="flex widgets justify-end">
+                <div class="views">
+                    <span class="bold">8</span>
+                    <i class=" icon-doc-landscape"></i>
+                </div>
+                <div class="comments">
+                    <span class="bold">12</span>
+                    <i class="icon-eye"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="flex justify-center">
+    <div class="btn load primary text-white">
+        <i class="icon-download"></i>
+        LOAD MORE
+    </div>
+</section>
+
+<section class="help flex wrap justify-center align-center">
+    <div class="description">
+        <span class="bold">Are you stack on a project and you need help?</span>  
+        <span class="text">Don't worry we are here for you</span>
+    </div>
+    <div class="btn load primary text-white">GET HELP</div>
+</section>
+
+<footer class="flex wrap justify-around align-start">
+        <div class="title bold">PAGES</div>
+        <a class="link light">DONATE</a>
+        <a class="link light">GET HELP</a>
+        <a class="link light">CONTACT US</a>
+        <div class="title bold">SOCIAL</div>
+        <a class="link light">FACEBOOK</a>
+        <a class="link light">TWITTER</a>
+</footer>
+
+<div class="copy">
+     COPYRIGHT CODE OPEN SOURCE 2018
+</div>

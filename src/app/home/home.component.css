@@ -1,0 +1,287 @@
+section.intro{
+    display:-webkit-flex;
+	display: flex;
+    margin: 5px;
+    background: #fff;
+}
+
+.intro .title{
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+.intro .description{
+    font-size: .9em;
+    max-width: 85%;
+    padding-bottom:20px;
+}
+
+.c5{
+    color:#555;
+}
+
+.intro .left .btn{
+    color:#e91e63;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: .8em;
+}
+
+.intro .right .btn{
+    background-color:#e91e63;
+    color: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: .8em;
+}
+
+.intro .right{
+    padding: 25px;
+}
+
+.intro .left{
+    text-align: right;
+    align-self: stretch;
+    color:#fff;
+    background-image: url('../../assets/img/gift.jpg');
+}
+
+.intro .left .wrapper{
+    background-color: rgba(233,30,99,.75);
+    padding: 25px;
+}
+
+@media only screen and (max-width: 765px) {
+    section.intro{
+        display: block;
+    }
+}
+
+section.categories{
+    margin: 5px 5px;
+    overflow: hidden;
+    position: relative;
+    width:60%;
+}
+
+.categories .container{
+    position: relative;
+    display: inline-block;
+    width: 2000vw;
+    border:2px solid #fff;
+}
+
+.category{
+    color:#606060;
+    display: inline-block;
+    background-color: white;
+    font-size: .8em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 15px;
+}
+
+.category:hover{
+    background: #e91e63;
+    color:white;
+}
+
+.categories .arrow-right{
+    position: absolute;
+    top: 2px;
+    right: -15px;
+}
+
+.categories .arrow-left{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+section.social{
+    width: 38%;
+    padding: 0px 0px;
+    font-size:.9em;
+    margin-right: 5px;
+}
+
+.social span{
+    margin-left: 15px;
+    color:#fff;
+}
+
+.facebook{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#1565c0;
+    background: #fff;
+    font-size:.9em;
+    width: 45%;
+}
+
+.facebook:hover{
+    color:white;
+    background-color:#1565c0;
+}
+
+.twitter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#fff;
+    background: #e91e63;
+    font-size:.9em;
+    width: 45%;
+}
+
+.twitter:hover{
+    color:#e91e63;
+    background-color:white;
+}
+
+@media only screen and (max-width: 765px) {
+    section.categories{
+        width: 100%;
+        order:2;
+    }
+    section.social{
+        width: 100%;
+        order:1;
+    }
+}
+
+section.item-list{
+    margin:5px 5px 5px;
+}
+
+.item-list .item{
+    width: 18%;
+    min-width: 250px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.item-list .item:hover{
+    cursor: pointer;
+}
+
+.item-list .item .top{
+    /* display: none; */
+    padding:8px 8px 8px 8px;
+}
+
+.item .top .img{
+    min-width: 25px;
+    min-height:25px;
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background-image: url('../../assets/img/gift.jpg');
+}
+
+.item .top .name{
+    font-size:.9em;
+    padding-left: 10px;
+}
+
+.item .top .tags{
+    display: none;
+    padding-left: 15px;
+    font-size: .6em;
+}
+
+.item .cover-image{
+    height: 180px;
+    background-color: #f0f0f0;
+}
+
+.item .bottom{
+    padding: 4px 12px 4px 8px;
+    border-top:1px solid #f0f0f0;
+    color:#555;
+}
+
+.item .dev{
+    display: none;
+    font-size: .8em;
+    padding-bottom: 3px;
+}
+
+.item .widgets{
+    font-size: .8em;
+}
+
+.item .widgets span{
+    font-size: .85em;
+    margin-right: 3px;
+}
+
+.item .widgets .comments{
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 765px) {
+    .item-list .item{
+        min-width: 49%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .item-list .item{
+        min-width: 100%;
+    }
+}
+
+.load{
+    font-size: .8em;
+    padding:8px 30px;
+}
+
+section.help{
+    margin-top: 20px;
+    padding:15px;
+    background-color: white;
+}
+
+.help .text{
+    padding: 0 20px;
+}
+
+footer{
+    padding:30px 20px 5px;
+    background-color: #2a2a2d;
+}
+
+footer .title{
+    font-size: .9em;
+    color:white;
+    padding-bottom: 15px;
+}
+
+footer .link{
+    text-decoration: underline;
+    color:white;
+    font-size: .8em;
+    padding-bottom: 5px;
+}
+
+footer .link:hover{
+    cursor:pointer;
+}
+
+.copy{
+    color:white;
+    font-size: .8em;
+    text-align: center;
+    background-color: #2a2a2d;
+    padding:15px 10px 10px;
+}
+
+@media only screen and (max-width: 765px) {
+    .load{
+        margin-top:5px;
+    }
+}
+
+a:active, .active{
+    background-color: #e91e63;
+    color:white;
+}
